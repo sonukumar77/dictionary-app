@@ -14,11 +14,11 @@
             <h3>Sonu Kumar ( Dictionary App )</h3>
         </header>
         <div class="main-content">
-            <section class="tab-container">
-                <button>Add New person</button>
-                <button>Retrieve Information</button>
+            <section class="tab-container" >
+                <button id="add-new-person-btn">Add New person</button>
+                <button id="retrieve-info-btn">Retrieve Information</button>
             </section>
-            <section class="add-new-person-container">
+            <section class="add-new-person-container" >
                 <p>Add New Person</p>
                 <table>
                     <thead>
@@ -31,8 +31,8 @@
                             <th>Actions</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody id="table-body">
+                        <tr id="inputs-row">
                             <td>
                                 <input type="text" name="person_name" id="person_name">
                             </td>
@@ -58,6 +58,31 @@
                 <div class="add-btn-container">
                     <button id="add-btn">Add</button>
                 </div>
+            </section>
+            <section class="retrieve-info-container" style="display: none;">
+                <p>Retrieve Information</p>
+                <div class="find-container">
+                    <input type="text" name="aadhar-input-box" id="aadhar-input-box">
+                    <button id="find-btn">Find</button>
+                </div>
+                <table id="show-info-table">
+                    <tr>
+                        <td>Name</td>
+                        <td>Sonu</td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>Sonu</td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>Sonu</td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td>Sonu</td>
+                    </tr>
+                </table>
             </section>
         </div>
        
