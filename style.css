@@ -48,7 +48,7 @@ header>h3{
     /* border: 3px solid rgb(9, 171, 152); */
     margin-bottom: 2rem;
 }
-.tab-container >button,#add-btn{
+.tab-container >button,#add-btn,#find-btn{
     border: none;
     outline: none;
     background-color: var(--primary);
@@ -58,13 +58,13 @@ header>h3{
     cursor: pointer;
    
 }
-.add-new-person-container{
+.add-new-person-container,.retrieve-info-container{
     width: 100%;
     height: 70%;
     border:2px solid var(--primary);
     
 }
-.add-new-person-container>p{
+.add-new-person-container>p,.retrieve-info-container>p{
     width: 20%;
     padding: 0.5rem;
     font-weight: bold;
@@ -107,4 +107,27 @@ padding: .5rem;
 
 }
 
+
+
+.find-container{
+    /* border: 2px solid green; */
+    width: 100%;
+    margin: 1rem;
+}
+.find-container >input[type="text"]{
+    padding: 0.5rem;
+    font-size: 1.2rem;
+}
+.find-container #find-btn{
+    padding: 0.6rem 1rem;
+    font-size: 1.2rem;
+}
+#show-info-table{
+    border: 2px solid var(--primary);
+    margin: 1rem;
+}
+#show-info-table tr td{
+    width: 5rem;
+    padding: 0.5rem;
+}
 
